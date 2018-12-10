@@ -1,0 +1,259 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+       <table class="table table-striped">
+          <tbody>
+             <tr>
+                <td colspan="1">
+                   <div class="well form-horizontal">
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">First Name</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" [(ngModel)]="first_name"   placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Gender</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="gender"  class="selectpicker form-control">
+                                     <option>select </option>
+                                     <option>Male </option>
+                                     <option>Female </option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Age</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" [(ngModel)]="age"  name="addressLine2" placeholder="enter age" class="form-control" required="true" value="" type="number"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Town</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="city" [(ngModel)]="town"  placeholder="Town" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">State/Province/Region</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" [(ngModel)]="state"  name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Postal Code/ZIP</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" [(ngModel)]="postal_code"  name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Country</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="country" [(ngModel)]="country"  name="state" placeholder="enter contry" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">primary Number</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" [(ngModel)]="primary_number"  name="phoneNumber" placeholder="Enter nationality" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Secondry Number</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" [(ngModel)]="secondry_number"  name="phoneNumber" placeholder="Enter nationality" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Email</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" [(ngModel)]="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <!-- <div class="form-group">
+                            <label class="col-md-4 control-label">Phone Number</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber"   name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div> -->
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Religion</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select  [(ngModel)]="religion" class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Hindu</option>
+                                     <option>Islam</option>
+                                     <option>Sikh</option>
+                                     <option>jainism</option>
+                                     <option>Buddhismism</option>
+                                     <option>christianity</option>
+                                     <option>Ethiest</option>
+                                     <option>other</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Family Type</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="family_type"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Nuclear</option>
+                                     <option>joint</option>
+                                     <option>Extended</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         
+
+                      </fieldset>
+                    </div>
+                </td>
+                <td colspan="1">
+                   <div class="well form-horizontal">
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Last Name</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" [(ngModel)]="last_name"  name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Present Address</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" [(ngModel)]="present_address" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Permanent Address</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" [(ngModel)]="permanent_address"  name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Adhar number</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" [(ngModel)]="adhar"  placeholder="Enter Adhar number" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Marital Status</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="marital_status"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Unmarried</option>
+                                     <option>Married</option>
+                                     <option>Divorced</option>
+                                     <option>Wodowed</option>
+                                     <option>Remarried</option>
+                                     <option>Saparated</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+
+
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Father / Spouse name</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" [(ngModel)]="father_name" name="postcode" placeholder="Enter name" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Education</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="education"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>No Formal Education</option>
+                                     <option>School Education</option>
+                                     <option>Graduate</option>
+                                     <option>Post Graduate</option>
+                                     <option>Doctrate</option>
+                                     <option>Other</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Occupation</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="occupation"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Professional</option>
+                                     <option>Service</option>
+                                     <option>Employee</option>
+                                     <option>Business</option>
+                                     <option>Farmer</option>
+                                     <option>Student</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Monthly Income</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="monthly_income"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Below 10000</option>
+                                     <option>10000 to 25000</option>
+                                     <option>25000 to 50000</option>
+                                     <option>50000 to 100000</option>
+                                     <option>100000 to 5000000</option>
+                                     <option>More than 500000</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Locality</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select [(ngModel)]="locality"  class="selectpicker form-control">
+                                     <option>select options</option>
+                                     <option>Urban</option>
+                                     <option>Semi urban</option>
+                                     <option>Rural</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Nationality</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" [(ngModel)]="nationality"  name="phoneNumber" placeholder="Enter nationality" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                      </fieldset>
+                    </div>
+                </td>
+                <td>
+                  <input type="button" value="add pateint" class="btn btn-primary" (click)="addNewPatient()" >
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </div>

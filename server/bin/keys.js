@@ -1,0 +1,1 @@
+exports.jwt_key='my-secret-key';
